@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -9,11 +9,11 @@ using chatbot.Models;
 
 namespace chatbot.Controllers
 {
-    public class HomeController : Controller
+    public class MessageController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public MessageController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }

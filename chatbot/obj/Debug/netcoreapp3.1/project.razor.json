@@ -20551,6 +20551,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Message\\Index.cshtml",
+      "TargetPath": "Views\\Message\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
