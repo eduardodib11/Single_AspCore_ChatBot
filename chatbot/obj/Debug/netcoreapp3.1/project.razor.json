@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Messages\\Details.cshtml",
+      "TargetPath": "Views\\Messages\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -20533,6 +20538,21 @@
     {
       "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Messages\\Edit.cshtml",
+      "TargetPath": "Views\\Messages\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Messages\\Create.cshtml",
+      "TargetPath": "Views\\Messages\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Messages\\Index.cshtml",
+      "TargetPath": "Views\\Messages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20551,8 +20571,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Message\\Index.cshtml",
-      "TargetPath": "Views\\Message\\Index.cshtml",
+      "FilePath": "c:\\Users\\eduar\\Documents\\projetos\\teste_single_asp_core_chat_bot\\chatbot\\Views\\Messages\\Delete.cshtml",
+      "TargetPath": "Views\\Messages\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {

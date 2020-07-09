@@ -1,4 +1,4 @@
-﻿@model cModel
+﻿@model chatbot.Models.cModel;
 
 @{
     ViewData["Title"] = "Home Page";
@@ -9,8 +9,10 @@
     <p>Make a question</p>
     @using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
-        <textarea id="history_area"></textarea>
-        <input type="text" id="input_question">
-        <button type="submit">Send</button>
+        <div class="form-group">
+            <textarea asp-for="Textarea" rows="5" cols="40" class="form-control"></textarea>
+            <input asp-for="Input" class="form-control" />
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary" />
     }
 </div>

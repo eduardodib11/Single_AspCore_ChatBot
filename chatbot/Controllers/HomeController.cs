@@ -13,9 +13,9 @@ namespace chatbot.Controllers
     {
         private readonly MemDbContext _context;
 
-        public HomeController(MemDbContext memDbContext)
+        public HomeController(MemDbContext context)
         {
-            _context = memDbContext;
+            _context = context;
         }
 
         [HttpGet]
