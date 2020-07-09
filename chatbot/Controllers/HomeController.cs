@@ -11,16 +11,31 @@ namespace chatbot.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly MemDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(MemDbContext memDbContext)
         {
-            _logger = logger;
+            _context = memDbContext;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            cModel _model = new cModel();
+            return View(_model);
+        }
+
+        [HttpPost]
+        public IActionResult Index(cModel _model)
+        {
+            var _message = _context.Messages.FirstOrDefault(m => m.Question == _model.Input.ToUpper());
+
+            if(_message != null)
+            {
+                _model.Textarea += "\n" + _message.Answer;
+            }
+
+            return View(_model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

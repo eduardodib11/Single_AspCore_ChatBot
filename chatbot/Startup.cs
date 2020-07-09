@@ -25,6 +25,7 @@ namespace chatbot
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MemDbContext>(options => options.UseInMemoryDatabase(databaseName: "MemDb"));
+            services.AddScoped<MemDbContext>();
             services.AddControllersWithViews();
         }
 
@@ -42,9 +43,6 @@ namespace chatbot
             app.UseStaticFiles();
 
             app.UseRouting();
-
-            var context = app.ApplicationServices.GetService<MemDbContext>();
-            //AdicionarDadosTeste(context);
 
             app.UseAuthorization();
 
