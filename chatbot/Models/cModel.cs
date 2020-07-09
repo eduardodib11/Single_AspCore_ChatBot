@@ -6,7 +6,7 @@ namespace chatbot.Models
 {
     public class cModel
     {
-        [ReadOnly(true)]
+        //[ReadOnly(true)]
         public string Textarea { get; set; }
         [Required]
         public string Input { get; set; }

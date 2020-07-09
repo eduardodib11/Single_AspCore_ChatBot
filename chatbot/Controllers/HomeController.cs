@@ -28,13 +28,15 @@ namespace chatbot.Controllers
         [HttpPost]
         public IActionResult Index(cModel _model)
         {
-            var _message = _context.Messages.FirstOrDefault(m => m.Question == _model.Input.ToUpper());
-
-            if(_message != null)
+            if (ModelState.IsValid)
             {
-                _model.Textarea += "\n" + _message.Answer;
-            }
+                var _message = _context.Messages.FirstOrDefault(m => m.Question == _model.Input.ToUpper());
 
+                if(_message != null)
+                {
+                    _model.Textarea += "You :" + _model.Input + "\n Chat Bot: " + _message.Answer + "\n";
+                }
+            }
             return View(_model);
         }
 

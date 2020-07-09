@@ -57,6 +57,7 @@ namespace chatbot.Controllers
         {
             if (ModelState.IsValid)
             {
+                cMessage.Question = cMessage.Question.ToUpper();
                 _context.Add(cMessage);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -96,6 +97,7 @@ namespace chatbot.Controllers
             {
                 try
                 {
+                    cMessage.Question = cMessage.Question.ToUpper();
                     _context.Update(cMessage);
                     await _context.SaveChangesAsync();
                 }

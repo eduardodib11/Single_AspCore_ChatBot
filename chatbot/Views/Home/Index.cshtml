@@ -10,8 +10,8 @@
     @using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
         <div class="form-group">
-            <textarea asp-for="Textarea" rows="5" cols="40" class="form-control"></textarea>
-            <input asp-for="Input" class="form-control" />
+            <textarea id="@Html.IdFor(m => m.Textarea)" name="@Html.NameFor(m => m.Textarea)" class="form-control">@Html.DisplayFor(model => model.Textarea)</textarea>
+            @Html.EditorFor(m => m.Input, new { htmlAttributes = new { @class="form-control" } })
         </div>
         <input type="submit" value="Send" class="btn btn-primary" />
     }
