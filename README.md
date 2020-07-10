@@ -20,4 +20,4 @@ Usando "ASP.NET" e ".NET CORE 3.1".
 
     c) *dotnet run;*
 
-
+### Projeto desenvolvido usando [Visual Studio Code](https://code.visualstudio.com) e [.NET Core CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/), em linguagem [C#](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference) com estrutura [MVC](https://docs.microsoft.com/en-us/previous-versions/aspnet/dd381412(v=vs.108)).
